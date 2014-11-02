@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<head>
+  <title>cavera.co</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0;">
+  <script src="js/jquery-1.9.1.js"></script>
+  <script src="js/hittest.js"></script>
+  <script src="src/minified/TweenMax.min.js"></script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAARfBBFpkq1Ti3owLyKeO2WfA2UhwFUL8&amp;sensor=false&amp;extension=.js"></script>
+  <link rel="stylesheet" type="text/css" href="css/estilo.css">
+</head>
+<body>
+  <div id="map"></div>
+  <div class="wrapper">
+    <div class="palabra">
+      <div class="letra">
+        <p>c</p>
+      </div>
+      <div class="letra">
+        <p>a</p>
+      </div>
+      <div class="letra">
+        <p>v</p>
+      </div>
+      <div class="letra">
+        <p>e</p>
+      </div>
+      <div class="letra">
+        <p>r</p>
+      </div>
+      <div class="letra">
+        <p>a</p>
+      </div>
+    </div>
+    <div class="vinculos"><a href="http://twitter.com/cavera_de" target="_blank" class="link tw">@cavera_de</a><a href="http://facebook.com/cavera" target="_blank" class="link fb">facebook.com/cavera</a></div>
+  </div>
+  <script>
+    google.maps.event.addDomListener(window, 'load', init);
+    
+    var map;
+    
+    function init() {
+        var mapOptions = {
+            center: new google.maps.LatLng(4.71603, -74.114106),
+            zoom: 17,
+            zoomControl: true,
+            zoomControlOptions: {
+                style: google.maps.ZoomControlStyle.SMALL,
+            },
+            disableDoubleClickZoom: true,
+            mapTypeControl: true,
+            mapTypeControlOptions: {
+                style: google.maps.MapTypeControlStyle.DROPDOWN_MENU,
+            },
+            scaleControl: false,
+            scrollwheel: true,
+            streetViewControl: false,
+            draggable: false,
+            overviewMapControl: false,
+            mapTypeId: google.maps.MapTypeId.ROADMAP,
+            styles: [{
+                stylers: [{
+                    hue: '#ff1a00'
+                }, {
+                    invert_lightness: true
+                }, {
+                    saturation: -100
+                }, {
+                    lightness: 33
+                }, {
+                    gamma: 0.5
+                }]
+            }, {
+                featureType: 'water',
+                elementType: 'geometry',
+                stylers: [{
+                    color: '#2D333C'
+                }]
+            }],
+            
+        }
+        
+        var mapElement = document.getElementById('map');
+        var map = new google.maps.Map(mapElement, mapOptions);
+        var locations = [
+        
+        ];
+        
+        for (i = 0; i < locations.length; i++) {
+            marker = new google.maps.Marker({
+                icon: '',
+                position: new google.maps.LatLng(locations[i][1], locations[i][2]),
+                map: map
+            });
+        }
+    }
+  </script>
+  <script type="text/javascript" src="js/script.js"></script>
+</body>

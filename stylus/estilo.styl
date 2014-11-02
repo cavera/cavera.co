@@ -1,0 +1,79 @@
+@import nib
+
+global-reset()
+
+negro = #000
+oscuro = rgba(0,0,0,0.6)
+
+html
+	background #000
+	height 100%
+
+body
+	font-family Helvetica,Arial,sans-serif
+	font-size 16px
+	background negro
+	height 100%
+.wrapper
+	margin 0 auto
+	max-width 900px
+	// background rgba(0, 0, 0, .75)
+	overflow hidden
+	height 100%
+	.palabra
+		zindex 30
+		position absolute
+		top 0
+		// background: #b7b7b7
+		height 100%
+	.letra
+		-webkit-box-sizing border-box;
+		   -moz-box-sizing border-box;
+		        box-sizing border-box;
+		width 150px
+		height @width
+		@media (max-width: 480px) {
+			width 50px
+			height 50px
+		}
+		background #5f5f5f
+		line-height @width
+		text-align center
+		float left
+		padding 0
+		margin 0
+		font-size 4em
+		border 1px solid #3f3f3f
+		border-radius 50%
+		position: relative
+		top 50%
+		p
+			margin 0
+			padding 0
+			color #FFF
+
+div#map
+	width 100%
+	height 100%
+	position fixed
+	opacity 0.5
+.vinculos
+	position: absolute
+	top 50px
+	.link
+		text-decoration none
+		color #FFF
+		text-align: center
+		padding 10px
+		background oscuro
+		border-radius 5px
+		transition all 0.3s
+		margin-right 20px
+	.link:hover
+		text-decoration underline
+		color oscuro
+		background #FFF
+	.tw:hover
+		color #008bff
+	.fb:hover
+		color #215acd

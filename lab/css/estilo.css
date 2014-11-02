@@ -1,0 +1,163 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-weight: inherit;
+  font-style: inherit;
+  font-family: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+body {
+  line-height: 1;
+  color: #000;
+  background: #fff;
+}
+ol,
+ul {
+  list-style: none;
+}
+table {
+  border-collapse: separate;
+  border-spacing: 0;
+  vertical-align: middle;
+}
+caption,
+th,
+td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+a img {
+  border: none;
+}
+body {
+  font-family: Helvetica, Arial, sans-serif;
+}
+.wraper {
+  max-width: 800px;
+  height: 100%;
+  background: #bfbfbf;
+  overflow: hidden;
+  margin: 0 auto;
+}
+.wraper h2 {
+  color: #c6182d;
+  font-size: 32px;
+}
+.box {
+  width: 200px;
+  height: 100px;
+  position: relative;
+  float: left;
+  top: 0;
+  left: 0;
+}
+.box p {
+  color: #fff;
+  text-align: center;
+  line-height: 100px;
+}
+.arrastrable {
+  background: #ae1e3d;
+  -webkit-box-shadow: 0 3px 3px rgba(0,0,0,0.75);
+  box-shadow: 0 3px 3px rgba(0,0,0,0.75);
+  -webkit-tap-highlight-color: rgba(0,0,0,0.5);
+  tap-highlight-color: rgba(0,0,0,0.5);
+}
+.recibido {
+  background: #3daea8;
+}
+.caja {
+  background: #ae000a;
+  border: 1px solid #89a930;
+  color: #fff;
+  float: left;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  height: 30%;
+  line-height: 100px;
+  margin: 0 3% 3% 0;
+  position: relative;
+  text-align: center;
+  width: 30%;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+}
+.caja p {
+  margin: 0;
+}
+input[type='range'] {
+  margin-top: 100px;
+  width: 400px;
+  height: 50px;
+  background: #da3124;
+  display: block;
+  margin: 0 auto;
+}
+.sprite {
+  width: 240px;
+  height: 314px;
+  background: transparent url("../img/robin.png") 0 0 no-repeat;
+  margin: 0 auto;
+}
